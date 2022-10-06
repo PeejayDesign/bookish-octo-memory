@@ -1,0 +1,65 @@
+ <div class="logo">
+            <a href="#">
+               
+                <h1>Albert<span>o</span> Cl <div class="timeloader"></div></h1>
+                <div class="logoextratext"><p>ock</p></div>
+        </a>
+ </div>
+
+<style>
+  .timeloader{
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 3px solid #f9f9f9;
+    margin-left: 89px;
+    margin-top: -20px;
+}
+
+.timeloader::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 8px; bottom: 9px;
+    width: 2px; height: 10px;
+    background: #f9f9f9;
+    transform-origin: 0 100%;
+    animation: tick 1s infinite;
+}
+ @keyframes tick{
+    to { transform: rotate(359deg);}
+ }
+ 
+ .logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+   
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo h1{
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+
+.logoextratext p{
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-weight: 500;
+    margin-left: 120px;
+    margin-top: -28px;
+}
+
+  </style>
